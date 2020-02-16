@@ -17,7 +17,7 @@ class CsvParserTest {
 
   @BeforeEach
   void setUp() throws IOException, CsvValidationException {
-    csv = new CsvParser("SEOExample.csv");
+    csv = new CsvParser("bookstore_report2.csv");
   }
 
   @Test

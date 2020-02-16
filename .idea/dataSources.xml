@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="BookStore" uuid="134771bc-a6da-4a11-bfc6-849e2e46c82b">
+    <data-source source="LOCAL" name="BookStore.db" uuid="edeb5762-be9b-440c-95fe-f0d42724b9ae">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Users\JSGreenwell\Google Drive\Professorships\Fall2019\COP3003\ReadACSV\src\Data\BookStore.db</jdbc-url>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/src/Data/BookStore.db</jdbc-url>
+      <driver-properties>
+        <property name="enable_load_extension" value="true" />
+      </driver-properties>
     </data-source>
   </component>
 </project>

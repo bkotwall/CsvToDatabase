@@ -10,8 +10,11 @@ public class Main {
 
     public static void main(String[] args) throws IOException, CsvValidationException {
 	      // Literally just calls our parser right now (....and is called for tests)
-        CsvParser csvP = new CsvParser("src/Data/SEOExample.csv");
-        csvP.printCsv();
+        CsvParser csvP = new CsvParser("src/Data/bookstore_report2.csv");
+        //csvP.printCsv();
+
+        BookStoreDB.insertAuthor();
+        BookStoreDB.insertBook();
 
         // Load the json
         /*
@@ -26,6 +29,7 @@ public class Main {
 
         for (var element : authors) {
             System.out.println(element.getName());
+            System.out.println(element.getName() + " " + element.getEmail() + " " + element.getUrl());
         }
     }
 }
